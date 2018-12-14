@@ -1,5 +1,6 @@
 # InspectorHelperRes
-O projekcie 
+O projekcie:
+
 Projekt jest aplikacją webową, sworzoną w środowisku Spring Tool SuiteTM 3 jako Maven Project. Serwer na którym aktualnie uruchamiany jest program to Apache tomcat w wersji 8.5.35. Używana jest baza danych stworzona w MySQL Workbench o nazwie inspectorhelperdb.  
 Aplikacja uruchamiana jest aktualnie poprzez uruchomienie serwera apache tomcat na localhoscie. Po uruchomieniu serwera możemy przeglądać aplikację pod adresem http://localhost:8080/JavaWebApplication/ 
 Akualnie z bazą łączymy się za pomocą  DriverManager.getConnection("jdbc:mysql://localhost:3306/javawebapplication", "root", ""); W bazie znajduje się jedynie tabela „register” przechowywująca podstawowe dane użytkowników w celu umożliwienia rejestracji i logowania. Przy rejestracji do bazy dodawane są dane nowych użytkowników. Aktualne błędy tej sekcji: Program pozwala na przekazywanie pustych wartości przy rejestracji oraz ignoruje linijki 38-53 w klasie „Login”, które powinni zapewniać brak przejścia do strefy dla zalogowanych jeśli użytkownik nie znajduje się w bazie. 
