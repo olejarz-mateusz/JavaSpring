@@ -1,0 +1,35 @@
+<%@page import="java.io.FileInputStream"%>
+<%@page import="java.io.File"%>
+<%@page import="java.io.InputStreamReader"%>
+<%@page import="java.net.URL"%>
+<%@page import="java.io.FileReader"%>
+<%@page import="java.io.BufferedReader"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+   <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>ITD Inspector Helper</title>
+<meta name="author" content="Mateusz Olejarz">
+<link rel="stylesheet" type="text/css" href="/JavaWebApplication/css/reset.css">
+<!-- <link rel="stylesheet" type="text/css" href="/JavaWebApplication/css/"> -->
+</head>
+    <body>
+        <%
+            String jspPath = "E://Inspector/JavaSpring/JavaWebApplication/log/";
+            String fileName = "log.txt";
+            String txtFilePath = jspPath + fileName;
+            BufferedReader reader = new BufferedReader(new FileReader(txtFilePath));
+            //BufferedReader br = new InputStreamReader(new FileInputStream(txtFilePath));
+            StringBuilder sb = new StringBuilder();
+            String line;
+
+            while((line = reader.readLine())!= null){
+                sb.append(line+"\n");
+            }
+            out.println(sb.toString());
+        %>
+
+    </body>
+</html>

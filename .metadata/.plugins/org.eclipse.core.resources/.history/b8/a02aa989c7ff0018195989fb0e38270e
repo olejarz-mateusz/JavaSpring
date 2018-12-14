@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+  	<display-name>Register</display-name>
+  	<description></description>
+  	<servlet-class>com.JavaWebApplication.Controller.Register</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>com.JavaWebApplication.Controller.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Document</servlet-name>
+  	<display-name>Document</display-name>
+  	<description></description>
+  	<servlet-class>com.JavaWebApplication.Controller.Document</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Dokument</servlet-name>
+  	<display-name>Dokument</display-name>
+  	<description></description>
+  	<servlet-class>com.JavaWebApplication.Controller.Dokument</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Document</servlet-name>
+  	<url-pattern>/Document</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Dokument</servlet-name>
+  	<url-pattern>/Dokument</url-pattern>
+  </servlet-mapping>
+</web-app>
